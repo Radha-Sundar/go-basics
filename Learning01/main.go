@@ -9,11 +9,11 @@ import (
 )
 
 func index(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "<h1>Hello World</h1>")
+	fmt.Fprintf(w, "<h1>Hello World after change</h1>")
 }
 
 func check(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "<h1>Health check</h1>")
+	fmt.Fprintf(w, "<h1>Health check after change</h1>")
 }
 
 func main() {
@@ -29,7 +29,7 @@ func main() {
 
 	router := mux.NewRouter()
 	router.HandleFunc("/", index).Methods("GET")
-	router.HandleFunc("/health_check", check).Methods("GET")
+	router.HandleFunc("/health-check", check).Methods("GET")
 
 	//http.HandleFunc("/", index)
 	//http.HandleFunc("/health_check", check)
