@@ -1,4 +1,4 @@
-module go-basic
+module go-basics
 
 go 1.17
 
