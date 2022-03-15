@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"github.com/gorilla/mux"
+	"go-basics/db"
+	"log"
 	"net/http"
 )
 
@@ -16,17 +18,14 @@ func check(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 
-	//var (
-	//	ListenAddr = "localhost:8080"
-	//	RedisAddr  = "localhost:6379"
-	//)
-	//
-	//database, err := db.NewDatabase(RedisAddr)
-	//if err != nil {
-	//	log.Fatalf("Failed to connect to redis: %s", err.Error())
-	//}
-	//router := initRouter(database)
-	//router.Run(ListenAddr)
+	var (
+		RedisAddr = "localhost:6379"
+	)
+
+	_, err := db.NewDatabase(RedisAddr)
+	if err != nil {
+		log.Fatalf("Failed to connect to redis: %s", err.Error())
+	}
 
 	router := mux.NewRouter()
 	router.HandleFunc("/", index).Methods("GET")
