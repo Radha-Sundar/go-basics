@@ -92,10 +92,11 @@
 #### 3) Readability
 
 ### Values:
-#### 1) A good package starts with a good name
-#### 2) Plan for failure, not success
-#### 3) Return early rather than nesting deeply
-#### 4) If you think it’s slow, prove it with a benchmark
-#### 5) Before you launch a goroutine, know when it will stop
-#### 6) Write tests to lock in the behaviour of your package’s API
+
+##### 1) A good package starts with a good name
+##### 2) Plan for failure, not success
+##### 3) Return early rather than nesting deeply
+##### 4) If you think it’s slow, prove it with a benchmark
+##### 5) Before you launch a goroutine, know when it will stop
+##### 6) Write tests to lock in the behaviour of your package’s API
 
