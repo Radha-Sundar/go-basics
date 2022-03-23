@@ -8,7 +8,7 @@
 - In GO, Maps can be created in two ways , 
     - Initialization without make() will allow to initialize **values**.
     - Initialization with make function will allow to initialize **capacity**.
-  ###### Note : For an empty map with capacity 0, both ways are same
+###### Note : For an empty map with capacity 0, both ways are same
 ### I) Simple Initialization 
 ###### Syntax :  <span style="color: #954121">map </span>[<span style="color: #aa7ee1"> key-type </span>]<span style="color: #aa7ee1"> val-type </span>{}
 ###### Sample-1 : <span style="color: #954121">map</span>[<span style="color: #aa7ee1">string</span>]<span style="color: #aa7ee1">int</span>{}      
