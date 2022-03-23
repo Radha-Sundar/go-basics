@@ -10,12 +10,12 @@
     - Slicing beyond its capacity causes a panic
 - Slice is a reference to an underlying Array, Slice abstracts and manipulates an underlying Array
 - Zero value of slice is nil, here capacity and the length of this slice is 0 also known as Nil Slice.
-#
+
 ## Declaration and Initialization
 
 These are the ways for creating Slice
 
-###1) Using the []type{values} format
+### 1) Using the []type{values} format
 ###### Syntax : []type{value1, value2, value3, ...value n}
 ###### type can be string,int,float,struct,map
 ###### Sample-2 : []string{"Amala","Bobby","Charley"}
@@ -39,7 +39,8 @@ Slice: [Amala Bobby Charley]
 Len: 3 	Cap: 3
 
 ```
-###2) Create a slice from an array
+
+### 2) Create a slice from an array
 ###### Syntax : array-name[start:end]
 ###### Sample-1 : names[2:4]
 ```
@@ -60,7 +61,8 @@ Output:
 Slice: [Charley Don]
 
 ```
-###3) Using the make() function
+
+### 3) Using the make() function
 ###### Syntax : make([]type, length, capacity)
 ###### Sample-1 : make([]int, 5, 10)
 ```
@@ -85,7 +87,8 @@ Output:
 Slice: [Amala Bobby Bobby  ]
 
 ```
-###4) Using new keyword
+
+### 4) Using new keyword
 ###### Syntax :  new([capacity]type)[start:end]
 ###### Sample-1 :  new([50]int)[0:10]
 ```
@@ -139,6 +142,7 @@ Output:
 11
 
 ```
+
 ### Using Range in For Loop
 ```
 package main
@@ -178,7 +182,7 @@ MIke
 Eve
 
 ```
-#
+
 ## Nil Slice vs Empty Slice:
 ###Nil Slice:
 var s []string,
@@ -190,7 +194,7 @@ s := []string{}
 ######Empty slice can also be created using make() function
 
 
-#
+
 ## Add key and value to Slice
 - We use append() function to add elements to a slice.
 ###### Syntax :  <span style="color: #aa7ee1"> append </span>(<span style="color: #aa7ee1"> slice-name </span>, <span style="color: #aa7ee1"> value1 </span>, <span style="color: #aa7ee1"> value2 </span>)
@@ -211,7 +215,7 @@ Output:
 Prime Numbers: [2 3 5 7 13 17]
 
 ```
-#
+
 ## Remove Value from Slice
 ###### Syntax :  <span style="color: #aa7ee1"> append </span>(<span style="color: #aa7ee1"> slice-name[start-index] , slice-name[end-index] ... ) </span>
 ###### Syntax :  <span style="color: #aa7ee1"> append</span>(<span style="color: #aa7ee1">prime[:1],prime[2:]...) </span>
@@ -236,7 +240,7 @@ Before Deletion: [2 3 5 7 11 13]
 After Deletion: [2 5 7 11 13]
 
 ```
-#
+
 ## Replace key/value in Slice
 #### Syntax :  <span style="color: #aa7ee1"> slice-name </span>[<span style="color: #aa7ee1"> index </span>] =<span style="color: #aa7ee1"> new-value </span>
 #### Sample-1 : <span style="color: #aa7ee1"> evenslice</span>[<span style="color: #aa7ee1">2</span>]=<span style="color: #aa7ee1">6</span>
@@ -266,7 +270,7 @@ Before Update:  [2 4 5 7 9 12]
 After Update:  [2 4 6 8 10 12]
 
 ```
-#
+
 ## Built-in Functions
 - These are the built-in functions used for Slice,
   - make(): helps to allocate and initialize the slice
@@ -426,7 +430,7 @@ slices equal: false
 
 ```
 ## Search
-######Linear Search
+###### Linear Search
 ```
 package main
 
@@ -559,19 +563,19 @@ package main
 import "fmt"
 
 func main() {
-	var countries = []string{"Lotus", "Jasmine", "Rose", "Sunflower", "Lavender"}
+	var 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 = []string{"Lotus", "Jasmine", "Rose", "Sunflower", "Lavender"}
 
-	fmt.Printf("Flowers                                    : %v\n", countries)
-	fmt.Printf("First Value [:1]                           : %v\n", countries[:1])
-	fmt.Printf("First two Values [:2]                      : %v\n", countries[:2])
-	fmt.Printf("Values from start-index to end-index [1:3] : %v\n", countries[1:3])
-	fmt.Printf("Values from start-index to end [3:]        : %v\n", countries[3:])
-	fmt.Printf("Values from start-index to end-index [0:3] : %v\n", countries[0:3])
-	fmt.Printf("Last Value                                 : %v\n", countries[len(countries)-1])
+	fmt.Printf("Flowers                                    : %v\n", flowers)
+	fmt.Printf("First Value [:1]                           : %v\n", flowers[:1])
+	fmt.Printf("First two Values [:2]                      : %v\n", flowers[:2])
+	fmt.Printf("Values from start-index to end-index [1:3] : %v\n", flowers[1:3])
+	fmt.Printf("Values from start-index to end [3:]        : %v\n", flowers[3:])
+	fmt.Printf("Values from start-index to end-index [0:3] : %v\n", flowers[0:3])
+	fmt.Printf("Last Value                                 : %v\n", flowers[len(flowers)-1])
 
-	fmt.Println("All Values using [:]                       :", countries[:])
-	fmt.Println("All Values using [0:]                      :", countries[0:])
-	fmt.Println("All Values using [0:len(countries)]        :", countries[0:len(countries)])
+	fmt.Println("All Values using [:]                       :", flowers[:])
+	fmt.Println("All Values using [0:]                      :", flowers[0:])
+	fmt.Println("All Values using [0:len(flowers)]        :", flowers[0:len(flowers)])
 }
 
 Output:
@@ -585,7 +589,7 @@ Values from start-index to end-index [0:3] : [Lotus Jasmine Rose]
 Last Value                                 : Lavender
 All Values using [:]                       : [Lotus Jasmine Rose Sunflower Lavender]
 All Values using [0:]                      : [Lotus Jasmine Rose Sunflower Lavender]
-All Values using [0:len(countries)]        : [Lotus Jasmine Rose Sunflower Lavender]
+All Values using [0:len(flowers)]        : [Lotus Jasmine Rose Sunflower Lavender]
 
 ```
 
