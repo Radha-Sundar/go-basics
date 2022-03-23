@@ -513,6 +513,34 @@ Name: Charlie
 Marks: [96 95 98 97 98]
 
 ```
+```
+package main
+
+import (
+	"fmt"
+)
+
+type Student struct {
+	name  string
+	class *string
+	marks []int
+}
+
+func main() {
+	student1 := Student{
+		name:  "Charlie",
+		marks: []int{96, 95, 98, 97, 98},
+	}
+
+	fmt.Println("student1 before :", student1)
+
+	section := "2D"
+	student1.class = &section
+	fmt.Println("student1 after :", student1.class)
+	fmt.Println("class :", *student1.class)
+}
+
+```
 ## Go fields as functions
 - we can give user defined function as the field in struct
 ```
