@@ -120,7 +120,7 @@ Len: 10 	Cap: 50
 ```
 
 ## Iteration / Print
-### Using Classic For loop
+### Using classic for loop
 ```
 package main
 
@@ -143,7 +143,7 @@ Output:
 
 ```
 
-### Using Range in For Loop
+### Using range in for loop
 ```
 package main
 
@@ -183,11 +183,11 @@ Eve
 
 ```
 
-## Nil Slice vs Empty Slice:
-###Nil Slice:
+## Nil slice vs Empty slice:
+###Nil slice:
 var s []string,
 ######where length and capacity is 0 and the underlying array is Nil
-###Empty Slice:
+###Empty slice:
 
 s := []string{}
 ######where length and capacity is 0 and underlying array is with length 0
@@ -195,7 +195,7 @@ s := []string{}
 
 
 
-## Add key and value to Slice
+## Add key and value to slice
 - We use append() function to add elements to a slice.
 ###### Syntax :  <span style="color: #aa7ee1"> append </span>(<span style="color: #aa7ee1"> slice-name </span>, <span style="color: #aa7ee1"> value1 </span>, <span style="color: #aa7ee1"> value2 </span>)
 ###### Sample-1 : <span style="color: #aa7ee1"> append </span>(<span style="color: #aa7ee1"> prime </span>, <span style="color: #aa7ee1"> 17 </span>, <span style="color: #aa7ee1"> 19 </span>)
@@ -216,7 +216,7 @@ Prime Numbers: [2 3 5 7 13 17]
 
 ```
 
-## Remove Value from Slice
+## Remove value from slice
 ###### Syntax :  <span style="color: #aa7ee1"> append </span>(<span style="color: #aa7ee1"> slice-name[start-index] , slice-name[end-index] ... ) </span>
 ###### Syntax :  <span style="color: #aa7ee1"> append</span>(<span style="color: #aa7ee1">prime[:1],prime[2:]...) </span>
 
@@ -241,7 +241,7 @@ After Deletion: [2 5 7 11 13]
 
 ```
 
-## Replace key/value in Slice
+## Replace value in slice
 #### Syntax :  <span style="color: #aa7ee1"> slice-name </span>[<span style="color: #aa7ee1"> index </span>] =<span style="color: #aa7ee1"> new-value </span>
 #### Sample-1 : <span style="color: #aa7ee1"> evenslice</span>[<span style="color: #aa7ee1">2</span>]=<span style="color: #aa7ee1">6</span>
 
@@ -271,7 +271,7 @@ After Update:  [2 4 6 8 10 12]
 
 ```
 
-## Built-in Functions
+## Built-in functions
 - These are the built-in functions used for Slice,
   - make(): helps to allocate and initialize the slice
   ```
@@ -368,11 +368,11 @@ After Update:  [2 4 6 8 10 12]
   Copied slice: [Antony Bobby Charlie], address: 0xc0000121e0
   // Address will be different
   ```
-## Compare Two slices in GO
+## Compare two slices in GO
 - We can compare two slices by two ways,
   - custom method
   - reflect
-### Custom Method
+### Custom method
 ```
 package main
 
@@ -430,7 +430,7 @@ slices equal: false
 
 ```
 ## Search
-###### Linear Search
+###### Linear search
 ```
 package main
 
@@ -463,7 +463,7 @@ Search (kiwi) in fruits:  true
 Search (pineapple) in fruits:  false
 
 ```
-## Sorting Slices Using Sort
+## Sorting slices using sort
 ```
 package main
 
@@ -495,7 +495,7 @@ After sorting (string): [Annie Charlie Mike Zen]
 
 ```
 
-## Merging Slices
+## Merging slices
 
 ```
 package main
