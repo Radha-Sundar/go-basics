@@ -185,13 +185,11 @@ Eve
 
 ## Nil slice vs Empty slice:
 ### Nil slice:
-var s []string ,
-	- where length and capacity is 0 and the underlying array is Nil
+var s []string , where length and capacity is 0 and the underlying array is Nil
 ### Empty slice:
 
-s := []string{} ,
-	- where length and capacity is 0 and underlying array is with length 0
-	- Empty slice can also be created using make() function
+s := []string{} , where length and capacity is 0 and underlying array is with length 0.
+Empty slice can also be created using make() function
 
 
 
