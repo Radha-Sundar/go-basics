@@ -3,7 +3,7 @@
 - The zero value of map is nil.
 - Maps are a reference to the hash table.
 - The data-type of key must be of same type and data-type of values must be of same type but data-type of key and value can be different.
-#
+
 ## Declaration and Initialization
 - In GO, Maps can be created in two ways , 
     - Initialization without make() will allow to initialize **values**.
@@ -73,7 +73,7 @@ emptyMap is nil
 
 ```
 
-#
+
 ## Iteration / Print
 ### Get by Key &nbsp;&nbsp;<span style="color: #aa7ee1"> map-name</span>[<span style="color: #aa7ee1"> key-name</span>] :
 ###### Sample-1: <span style="color: #aa7ee1"> marks</span>[<span style="color: #aa7ee1">"Sandy"</span>]
@@ -178,7 +178,7 @@ studentList[103] = Daniel
 studentList[104] = Eve
 studentList[105] = Gabby
 ```
-#
+
 ## Add key and value to Map
 ###### Syntax :  <span style="color: #aa7ee1"> map-name </span>[<span style="color: #aa7ee1"> key-name </span>] =<span style="color: #aa7ee1"> key-value </span>
 ###### Sample-1 : <span style="color: #aa7ee1"> studentList</span>[<span style="color: #aa7ee1">106</span>]=<span style="color: #aa7ee1">"Issac"</span>
@@ -210,7 +210,7 @@ Before-studentList  map[101:Amala 102:Bobby 103:Daniel 104:Eve 105:Gabby]
 Before-studentList  map[101:Amala 102:Bobby 103:Daniel 104:Eve 105:Gabby 106:Issac]
 
 ```
-#
+
 ## Remove key/value from Map
 ###### Syntax :  <span style="color: #954121"> delete </span>(<span style="color: #aa7ee1"> map_name , key-name </span>)
 ###### Sample-1 : <span style="color: #954121"> delete</span>(<span style="color: #aa7ee1">studentList, 104</span>)
@@ -243,7 +243,7 @@ Before-studentList  map[101:Amala 102:Bobby 103:Daniel 104:Eve 105:Gabby]
 Before-studentList  map[101:Amala 102:Bobby 103:Daniel 105:Gabby]
 
 ```
-#
+
 ## Replace key/value in Map
 #### Syntax :  <span style="color: #aa7ee1"> map-name </span>[<span style="color: #aa7ee1"> key-name </span>] =<span style="color: #aa7ee1"> new-key-value </span>
 #### Sample-1 : <span style="color: #aa7ee1"> studentList</span>[<span style="color: #aa7ee1">105</span>]=<span style="color: #aa7ee1">"Issac"</span>
@@ -304,7 +304,7 @@ func main() {
 
 ## Search
 - Value in the map is accessed like below with true/false boolean
-######Check for zero value
+### Check for zero value
 ```
 package main
 
@@ -336,7 +336,7 @@ Eves: 0
 if the value is zero value of value-type , then it means no match found
 
 ```
-######Use second return value directly in an if statement
+### Use second return value directly in an if statement
 ```
 package main
 
