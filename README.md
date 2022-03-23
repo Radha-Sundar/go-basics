@@ -42,7 +42,7 @@
 - Objects in the OOP paradigm have attributes and methods.
 
 ### Paradigms of GO:
-#### 1)Object-Oriented Language
+#### 1) Object-Oriented Language
 - Go is not a pure object-oriented programming language.
 - Go allows types and methods
 - Like oo there is interfaces but no class support
@@ -64,38 +64,38 @@
   - Variable of type interface can hold any values which implements interface.
 
 
-#### 2)Imperative
+#### 2) Imperative
 - It is an imperative language
 - It has a loop,statements and selections.
 
-#### 3)Concurrent Programming
+#### 3) Concurrent Programming
 - Go has native support for concurrent operations
 
-#### 4)Encapsulation;
+#### 4) Encapsulation;
 - In go encapsulation is achieved by capitalising fields,methods,struts and functions then it will become public. If it is public it is accessible at package level.
 
-#### 5)Interfaces:
+#### 5) Interfaces:
 - Interfaces are types that have multiple methods
 - Object that implements all the methods of the interface will implicitly implement the interface.
 
 ### Idiomatic feature:
-#### 1)Orthogonality
+#### 1) Orthogonality
 - Orthogonality means pieces that are independent of each other.
 - Changes to one part of types/programs/packages will have minimal effect to other parts
 
-#### 2)Simplicity
+#### 2) Simplicity
 - GO has no classes, methods can be added to any types
 - It has no inheritance
 - Interfaces are implicitly implemented
 - GO does not have generics
 
-#### 3)Readability
+#### 3) Readability
 
 ### Values:
-#### 1)A good package starts with a good name
-#### 2)Plan for failure, not success
-#### 3)Return early rather than nesting deeply
-#### 4)If you think it’s slow, prove it with a benchmark
-#### 5)Before you launch a goroutine, know when it will stop
-#### 6)Write tests to lock in the behaviour of your package’s API
+#### 1) A good package starts with a good name
+#### 2) Plan for failure, not success
+#### 3) Return early rather than nesting deeply
+#### 4) If you think it’s slow, prove it with a benchmark
+#### 5) Before you launch a goroutine, know when it will stop
+#### 6) Write tests to lock in the behaviour of your package’s API
 
