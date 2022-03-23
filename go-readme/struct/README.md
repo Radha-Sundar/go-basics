@@ -445,6 +445,74 @@ student1: {Charlie 2d {96 95 98 97 98}}
 Name: Charlie
 maths: 98
 ```
+## Go fields as interface field
+- To accept any data type , we will use struct field as interface{}
+```
+package main
+
+import (
+	"fmt"
+)
+
+type Student struct {
+	name  string
+	class string
+	marks interface{}
+}
+
+func main() {
+	student1 := Student{
+		name:  "Charlie",
+		class: "2d",
+		marks: []int{96, 95, 98, 97, 98},
+	}
+
+	fmt.Println("student1:", student1)
+	fmt.Println("Name:", student1.name)
+	fmt.Println("Marks:", student1.marks)
+}
+
+Output:
+student1: {Charlie 2d [96 95 98 97 98]}
+Name: Charlie
+Marks: [96 95 98 97 98]
+
+- here interface{} accepts []int array
+```
+## Go fields as pointer field using (*) operator
+- When we want to skip empty fields we can use pointer and do nil check and skip those fields.
+- In case of int data-type we can find the difference between a field that wasn't sent and a field that was sent with a value of 0
+
+```
+package main
+
+import (
+	"fmt"
+)
+
+type Student struct {
+	name  string
+	class *string
+	marks []int
+}
+
+func main() {
+	student1 := Student{
+		name: "Charlie",
+		marks: []int{96, 95, 98, 97, 98},
+	}
+
+	fmt.Println("student1:", student1)
+	fmt.Println("Name:", student1.name)
+	fmt.Println("Marks:", student1.marks)
+}
+
+Output:
+student1: {Charlie <nil> [96 95 98 97 98]}
+Name: Charlie
+Marks: [96 95 98 97 98]
+
+```
 ## Go fields as functions
 - we can give user defined function as the field in struct
 ```
