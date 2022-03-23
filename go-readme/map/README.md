@@ -32,7 +32,7 @@ Output:
 ###### Syntax :  <span style="color: #954121">make </span>(<span style="color: #954121"> map </span>[<span style="color: #aa7ee1"> key-type </span>]<span style="color: #aa7ee1"> val-type </span>)
 ###### Sample-1 : <span style="color: #954121">make</span>(<span style="color: #954121">map</span>[<span style="color: #aa7ee1">string</span>]<span style="color: #aa7ee1">int</span>)
 ###### Sample-2 : <span style="color: #954121">make</span>(<span style="color: #954121">map</span>[<span style="color: #aa7ee1">string</span>]<span style="color: #aa7ee1">float64</span>, 100)
-####### Note: 100 is the capacity of Map ,
+- Note: 100 is the capacity of Map ,
 ###### 100 is an estimate of the initial capacity of a map, It pre-allocates memory for at least 100 entries, which results in increased performance.
 ```
 package main
