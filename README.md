@@ -36,3 +36,66 @@
 ####
 
 - Popular tools which use Go are Kubernetes,Docker,Prometheus,go-ethereum
+
+## Go Paradigms
+- Object-oriented programming is the programming paradigm which is based on the concept of objects, which contains data in the form of fields and code in the form of procedures.
+- Objects in the OOP paradigm have attributes and methods.
+
+### Paradigms of GO:
+#### 1)Object-Oriented Language
+- Go is not a pure object-oriented programming language.
+- Go allows types and methods
+- Like oo there is interfaces but no class support
+- Methods are designed for all types including primitive data type
+  - Object in go:
+  Structs can store data and achieve methods using receivers.Struct is light weighted
+  - Methods in Go:
+  Methods are functions of a particular type. They have a receiver clause that mandates which type they are operated on.
+  - Structs instead of classes:
+  Go does not support class but struct is supported.Methods are allowed in struct.
+  - Composition instead of Inheritance:
+  Since go does not support classes there is no concept of inheritance.
+  - Inheritance will takes place via struct embedding using composition
+  - Anonymous field is composition where struct is embedded
+  - In composition base struct can be embedded into child struct and methods on the base structs can be directly called on the child struct.
+  - The new() function instead of constructors:
+  - Polymorphism
+  Polymorphism is achieved through interfaces.
+  - Variable of type interface can hold any values which implements interface.
+
+
+#### 2)Imperative
+- It is an imperative language
+- It has a loop,statements and selections.
+
+#### 3)Concurrent Programming
+- Go has native support for concurrent operations
+
+#### 4)Encapsulation;
+- In go encapsulation is achieved by capitalising fields,methods,struts and functions then it will become public. If it is public it is accessible at package level.
+
+#### 5)Interfaces:
+- Interfaces are types that have multiple methods
+- Object that implements all the methods of the interface will implicitly implement the interface.
+
+### Idiomatic feature:
+#### 1)Orthogonality
+- Orthogonality means pieces that are independent of each other.
+- Changes to one part of types/programs/packages will have minimal effect to other parts
+
+#### 2)Simplicity
+- GO has no classes, methods can be added to any types
+- It has no inheritance
+- Interfaces are implicitly implemented
+- GO does not have generics
+
+#### 3)Readability
+
+### Values:
+#### 1)A good package starts with a good name
+#### 2)Plan for failure, not success
+#### 3)Return early rather than nesting deeply
+#### 4)If you think it’s slow, prove it with a benchmark
+#### 5)Before you launch a goroutine, know when it will stop
+#### 6)Write tests to lock in the behaviour of your package’s API
+
