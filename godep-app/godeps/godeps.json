@@ -1,0 +1,11 @@
+{
+  "ImportPath": "github.com/Radha-Sundar/godep-app",
+  "GoVersion": "go1.16",
+  "Deps": [
+    {
+      "ImportPath": "github.com/Radha-Sundar/godep-app/pkg/greeter",
+      "Rev": "1a2b3c4d5e6f"
+    }
+    // Add other dependencies as needed...
+  ]
+}

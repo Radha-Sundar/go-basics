@@ -1,0 +1,13 @@
+language: go
+
+go:
+  - 1.16
+
+before_install:
+  - go get -u github.com/tools/godep
+
+install:
+  - godep restore
+
+script:
+  - go test ./...
