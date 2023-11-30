@@ -1,5 +1,3 @@
-// greeter.go
-
 package greeter
 
 // GetGreeting returns a welcome message.
