@@ -1,3 +1,3 @@
-module github.com/isha/go-basics
+module github.com/go-basics
 
 go 1.21.4
